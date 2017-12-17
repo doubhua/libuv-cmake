@@ -234,12 +234,15 @@ if(LIBUV_BUILD_TESTS)
         ${LIBUVDIR}/test/test-eintr-handling.c
         ${LIBUVDIR}/test/test-embed.c
         ${LIBUVDIR}/test/test-emfile.c
+		${LIBUVDIR}/test/test-env-vars.c
         ${LIBUVDIR}/test/test-error.c
         ${LIBUVDIR}/test/test-fail-always.c
         ${LIBUVDIR}/test/test-fs-event.c
         ${LIBUVDIR}/test/test-fs-poll.c
         ${LIBUVDIR}/test/test-fs.c
+		${LIBUVDIR}/test/test-fs-copyfile.c
         ${LIBUVDIR}/test/test-get-currentexe.c
+		${LIBUVDIR}/test/test-gethostname.c
         ${LIBUVDIR}/test/test-get-loadavg.c
         ${LIBUVDIR}/test/test-get-loadavg.c
         ${LIBUVDIR}/test/test-get-memory.c
@@ -276,6 +279,7 @@ if(LIBUV_BUILD_TESTS)
         ${LIBUVDIR}/test/test-pipe-pending-instances.c
         ${LIBUVDIR}/test/test-pipe-sendmsg.c
         ${LIBUVDIR}/test/test-pipe-server-close.c
+		${LIBUVDIR}/test/test-pipe-set-fchmod.c
         ${LIBUVDIR}/test/test-pipe-set-non-blocking.c
         ${LIBUVDIR}/test/test-platform-output.c
         ${LIBUVDIR}/test/test-poll-close.c
@@ -294,6 +298,7 @@ if(LIBUV_BUILD_TESTS)
         ${LIBUVDIR}/test/test-socket-buffer-size.c
         ${LIBUVDIR}/test/test-spawn.c
         ${LIBUVDIR}/test/test-stdio-over-pipes.c
+		${LIBUVDIR}/test/test-tcp-alloc-cb-fail.c
         ${LIBUVDIR}/test/test-tcp-bind-error.c
         ${LIBUVDIR}/test/test-tcp-bind6-error.c
         ${LIBUVDIR}/test/test-tcp-close-accept.c
@@ -325,6 +330,7 @@ if(LIBUV_BUILD_TESTS)
         ${LIBUVDIR}/test/test-timer.c
         ${LIBUVDIR}/test/test-tmpdir.c
         ${LIBUVDIR}/test/test-tty.c
+		${LIBUVDIR}/test/test-udp-alloc-cb-fail.c
         ${LIBUVDIR}/test/test-udp-bind.c
         ${LIBUVDIR}/test/test-udp-create-socket-early.c
         ${LIBUVDIR}/test/test-udp-dgram-too-big.c
@@ -337,6 +343,7 @@ if(LIBUV_BUILD_TESTS)
         ${LIBUVDIR}/test/test-udp-open.c
         ${LIBUVDIR}/test/test-udp-options.c
         ${LIBUVDIR}/test/test-udp-send-and-recv.c
+		${LIBUVDIR}/test/test-udp-send-hang-loop.c
         ${LIBUVDIR}/test/test-udp-send-immediate.c
         ${LIBUVDIR}/test/test-udp-send-unreachable.c
         ${LIBUVDIR}/test/test-udp-try-send.c
